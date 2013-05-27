@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnPremise.DataAccess", "OnPremise.DataAccess\OnPremise.DataAccess.csproj", "{6B9A132E-8540-40BE-B95F-2DE899A826E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{5D314ED1-DE73-43C0-86F5-358FFD2A3A92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{9B439B73-477D-448A-8C22-F7FE259EE459}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnPremise.DataAccess.Test", "OnPremise.DataAccess.Test\OnPremise.DataAccess.Test.csproj", "{85F880D8-DCC2-4A1C-8DE8-9E33ADE39AD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnPremise.ServiceHost", "OnPremise.ServiceHost\OnPremise.ServiceHost.csproj", "{3F4858A4-12C5-44AA-9591-30252D283982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnPremise.Service", "OnPremise.Service\OnPremise.Service.csproj", "{BA6FBEE6-D405-4828-869D-005FAD029363}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud.WebApp", "Cloud.WebApp\Cloud.WebApp.csproj", "{B3CBB43A-50CD-4DD9-9778-385DBB529520}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud.Services", "Cloud.Services\Cloud.Services.csproj", "{20A43FB9-C928-4680-B7DC-88E3602FD08C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0F2CCBA8-FD1C-4D7C-B6AB-BA4FFF9BEFB4}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B9A132E-8540-40BE-B95F-2DE899A826E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B9A132E-8540-40BE-B95F-2DE899A826E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B9A132E-8540-40BE-B95F-2DE899A826E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B9A132E-8540-40BE-B95F-2DE899A826E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D314ED1-DE73-43C0-86F5-358FFD2A3A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D314ED1-DE73-43C0-86F5-358FFD2A3A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D314ED1-DE73-43C0-86F5-358FFD2A3A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D314ED1-DE73-43C0-86F5-358FFD2A3A92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F880D8-DCC2-4A1C-8DE8-9E33ADE39AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F880D8-DCC2-4A1C-8DE8-9E33ADE39AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F880D8-DCC2-4A1C-8DE8-9E33ADE39AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F880D8-DCC2-4A1C-8DE8-9E33ADE39AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F4858A4-12C5-44AA-9591-30252D283982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4858A4-12C5-44AA-9591-30252D283982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4858A4-12C5-44AA-9591-30252D283982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4858A4-12C5-44AA-9591-30252D283982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA6FBEE6-D405-4828-869D-005FAD029363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6FBEE6-D405-4828-869D-005FAD029363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6FBEE6-D405-4828-869D-005FAD029363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6FBEE6-D405-4828-869D-005FAD029363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3CBB43A-50CD-4DD9-9778-385DBB529520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3CBB43A-50CD-4DD9-9778-385DBB529520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3CBB43A-50CD-4DD9-9778-385DBB529520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3CBB43A-50CD-4DD9-9778-385DBB529520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20A43FB9-C928-4680-B7DC-88E3602FD08C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A43FB9-C928-4680-B7DC-88E3602FD08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A43FB9-C928-4680-B7DC-88E3602FD08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A43FB9-C928-4680-B7DC-88E3602FD08C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{85F880D8-DCC2-4A1C-8DE8-9E33ADE39AD8} = {9B439B73-477D-448A-8C22-F7FE259EE459}
+	EndGlobalSection
+EndGlobal
