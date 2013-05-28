@@ -22,7 +22,7 @@ namespace OnPremise.DataAccess
         public Collection<PersonDto> GetAll()
         {
             var ctx = new AdventureWorks2012Entities();
-            var people = (from p in ctx.People select p).Take(10).ToList();
+            var people = (from p in ctx.People select p).Take(30).ToList();
 
             return Mapper.Map<List<Person>, Collection<PersonDto>>(people);
 
@@ -34,7 +34,7 @@ namespace OnPremise.DataAccess
             var ctx = new AdventureWorks2012Entities();
             var people = (from p in ctx.People
                           where p.FirstName.ToLower().Contains(match.ToLower())
-                          select p).Take(10).ToList();
+                          select p).Take(30).ToList();
 
             return Mapper.Map<List<Person>, Collection<PersonDto>>(people);
 

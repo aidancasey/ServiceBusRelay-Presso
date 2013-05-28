@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Relay Demos</h2>
+
+<form action="#">
+  <input type="submit" onclick="parent.location='@Url.Action("Index", "Person")';return false;" value="Person Search" />
+  <input type="submit" onclick="parent.location='@Url.Action("Index", "Photo")';return false;" value="View Image" />
+</form>

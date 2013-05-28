@@ -17,10 +17,8 @@ namespace OnPremise.Service
         public Stream GetImage(string name)
         {
 
-            string fileName = string.Format(@"C:\foo\{0}.jpg", name);
-
-           Console.WriteLine("GetImage() " + fileName);
-
+            Console.WriteLine("GetImage() " + name);
+            string fileName = string.Format(@"C:\Code\MTUG May 2013\images\{0}.jpg", name);
 
             img = Image.FromFile(fileName);
 

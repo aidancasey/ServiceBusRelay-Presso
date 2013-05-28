@@ -13,8 +13,8 @@ namespace Cloud.Services
     public class ServiceBase
     {
 
-        public string baseAddress = "mtug-demo.servicebus.windows.net";
-        public string sharedSecret = "DCt7TcfSw7A18/aUUyPVr8mqOp3gKqXxAexbcIafVss=";
+        public string baseAddress = "mtug-1.servicebus.windows.net";
+        public string sharedSecret = "vGNF+mSXrT5Wc9g946vHm5KNK/s8hsIrJqM0hnI+XtM=";
 
         protected string PostJson(string url, string data)
         {
