@@ -13,50 +13,14 @@ namespace Cloud.Services
     public class ServiceBase
     {
 
-        public string baseAddress = "mtug-1.servicebus.windows.net";
-        public string sharedSecret = "vGNF+mSXrT5Wc9g946vHm5KNK/s8hsIrJqM0hnI+XtM=";
-
-        protected string PostJson(string url, string data)
-        {
-            var bytes = Encoding.Default.GetBytes(data);
-            using (var client = new WebClient())
-            {
-                client.Headers.Add("Content-Type", "application/json");
-                var response = client.UploadData(url, "POST", bytes);
-                return Encoding.Default.GetString(response);
-            }
-        }
-
-        public string GetAuthorizationToken(string serviceNamespace, string issuerName, string issuerPassword)
-        {
-            var acsEndpoint = string.Format("https://{0}-sb.accesscontrol.windows.net/WRAPv0.9", serviceNamespace);
-            var relyingPartyAddress = string.Format("http://{0}.servicebus.windows.net", serviceNamespace);
-            var postData = new NameValueCollection
-                               {
-                                   {"wrap_scope", relyingPartyAddress},
-                                   {"wrap_name", issuerName},
-                                   {"wrap_password", issuerPassword},
-                               };
-            var webClient = new WebClient();
-            var responseBuffer = webClient.UploadValues(acsEndpoint, "POST", postData);
-            var response = Encoding.UTF8.GetString(responseBuffer);
-            var encodedtoken = response.Split('&')
-                                       .Single(value => value.StartsWith("wrap_access_token="))
-                                       .Split('=')[1];
-            var token = System.Web.HttpUtility.UrlDecode(encodedtoken);
-            return token;
-        }
-
+        public string baseAddress = "mtug-irl.servicebus.windows.net";
+        public string sharedSecret = "jOdihL/h2vd3VF847C0AaeQGGTZmvzaqPtdEyOVWqEE=";
 
         protected TResource DownloadResource<TResource>(string url) where TResource : class
         {
           
             using (var serviceRequest = new WebClient())
             {
-                var serviceName = baseAddress.Replace(".servicebus.windows.net", "");
-                var token = GetAuthorizationToken(serviceName, "owner", sharedSecret);
-                serviceRequest.Headers["Authorization"] = string.Format("WRAP access_token=\"{0}\"", token);
-
                 var response = serviceRequest.DownloadString(new Uri(url));
                 return JsonConvert.DeserializeObject<TResource>(response);
             }
@@ -67,10 +31,6 @@ namespace Cloud.Services
 
             using (var serviceRequest = new WebClient())
             {
-                var serviceName = baseAddress.Replace(".servicebus.windows.net", "");
-                var token = GetAuthorizationToken(serviceName, "owner", sharedSecret);
-                serviceRequest.Headers["Authorization"] = string.Format("WRAP access_token=\"{0}\"", token);
-
                 var response = serviceRequest.DownloadData(new Uri(url));
                 Stream stream = new MemoryStream(response);
                 return stream;
