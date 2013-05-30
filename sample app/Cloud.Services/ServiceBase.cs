@@ -13,9 +13,9 @@ namespace Cloud.Services
     public class ServiceBase
     {
 
-        public string baseAddress = "mtug-irl.servicebus.windows.net";
-        public string sharedSecret = "jOdihL/h2vd3VF847C0AaeQGGTZmvzaqPtdEyOVWqEE=";
-
+        public string baseAddress = "mtug12.servicebus.windows.net";
+      
+        
         protected TResource DownloadResource<TResource>(string url) where TResource : class
         {
           

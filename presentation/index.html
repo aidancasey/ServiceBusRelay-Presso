@@ -38,7 +38,7 @@
 			<div class="slides">
 
 				<section>
-					<h2>"Building hybrid  applications  on Windows Azure"</h2>
+					<h2>"Building Hybrid  Applications  on Windows Azure"</h2>
 				</br>
 				</br>
 					<p>
@@ -54,21 +54,21 @@
 				<section>
 					<h1>Aidan Casey</h1>
 					</br>
-					<p>Solutions Architect @MYOB Australia </p>
+					<p>solutions architect @MYOB Australia </p>
 					</br>
 					<p>@AIDANJCASEY  |   acaseyblog.wordpress.com</p>
 
 				</section>
 
                 <section>
-					<h3>Agenda</h3>
+					<h3>In the next 30 mins...</h3>
 	                 <ul>
-						<li>What is a hybrid application?</li>
-                        <li>Overview service bus relay</li>
-                        <li>Demo's</li>
-                        <li>Security</li>
-                        <li>Price</li>
-                        <li>Pro's & Cons</li>
+						<li>define hybrid application</li>
+                        <li>explain service bus relay</li>
+                        <li>live demo</li>
+                        <li>security</li>
+                        <li>price</li>
+                        <li>pros & cons</li>
 					</ul>
 				</section>
 
@@ -83,10 +83,10 @@
 				<section>
 					<h2>Service Bus - Capabilities</h2>
 					<ul>
-						<li class="fragment">Queues</li>
-						<li class="fragment">Topics</li>
-						<li class="fragment">Notification Hub</li>
-						<li class="fragment">Relay</li>
+						<li class="fragment">queues</li>
+						<li class="fragment">topics</li>
+						<li class="fragment">notification hub</li>
+						<li class="fragment" style="color:red">RELAY</li>
 					</ul>
 				</section>
 
@@ -102,14 +102,10 @@
 				</section>
 
 				
-				<section>
-                    <h2>Bindings</h2>
-					<img width="900"  src="images/bindings.jpg" alt="Bindings">
-				</section>
 				
 				
 				<section>
-					<h2>Sample Architecture</h2>
+					<h2>A Sample Architecture</h2>
 					<img width="900"  src="images/relay.png" alt="Hybrid Cloud">
 				</section>
 
@@ -124,65 +120,63 @@
 				<section>
 					<h1>Security</h1>
 					<br/>
-					  <ul>
-						<li>SharedSecret</li>
-                        <li>Saml</li>
-                        <li>Simple Web Token</li>
-                        <li>(gulp) UnAuthenticated</li>
+    				  <ul>
+						<li>SharedSecret , SAML, Simple Web Token</li>
+						<li>Message/ Transport Level</li>
  					</ul>
-					</p>
+
 				</section>
 				
 				<section>
-					<h1>Pricing Details</h1>
+					<h1>Price</h1>
 				
 					  <ul>
 						<li>$0.10 per month for every 100 relay hours</li>
-                        <li>Data transfer for egres</li>
+                        <li>egres data transfer charges</li>
  					</ul>
 					</p>
 				</section>
 				
 				
 				<section>
-					<h1>Case Studies</h1>
-				
- 					</ul>
-					</p>
+					<h1>who is really RELAYing</h1>
+					<h1>?</h1>
+
 				</section>
 				
 
 				<section>
 					<h2>Pro's</h2>
                     <ul>
-						<li>Leverage existing services in the cloud -evolutionary architectures</li>
-                        <li>Security - on premise services shielded by load balancer</li>
-                        <li>Loose Coupling</li>
-						<li>Scalability</li>
-                        <li>Cheap</li>
+						<li>enables evolutionary architectures</li>
+                        <li>security - shield your on premise service</li>
+                        <li>loose coupling</li>
+						<li>scalability</li>
+                        <li>cheap</li>
  					</ul>
 				</section>
 
                 <section>
 					<h2>Con's</h2>
                      <ul>
-						<li>Firewall Settings(ip adresses & ports)</li>
-                        <li>Debugging is tricky</li>
-                        <li>Additional Latency</li>
-                        <li>For pub sub & guaranteed delivery embrace queues and topics with relay</li>
+						<li>firewall tweaks (ip adress range & ports)</li>
+                        <li>no local debug experience</li>
+                        <li>additional latency</li>
+                         <li>on premise service can be a single point of failure</li>
+                        <li>for pub sub & guaranteed delivery embrace queues and topics with relay</li>
 					</ul>
 				</section>
 				
 			   <section>
 					<h2>Useful Resources</h2>
                      <ul>
-						<li>Web API Host  - https://github.com/pmhsfelix/WebApi.Explorations.ServiceBusRelayHost</li>
+						<li>WebAPI Host  - https://github.com/pmhsfelix/WebApi.Explorations.ServiceBusRelayHost</li>
                         <li>Developer Center - http://www.windowsazure.com/en-us/develop/net/how-to-guides/service-bus-relay/</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Thanks for listening !</h2>
+					<h2>thanks for listening !</h2>
 				</br>
 					<p>github.com/aidancasey/ServiceBusRelay-Presso.git</p>
 				</section>
